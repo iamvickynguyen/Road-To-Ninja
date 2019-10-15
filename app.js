@@ -24,7 +24,7 @@ new Vue({
             this.check_action = false;
             this.check_special_attack = false;
             this.check_heal = false;
-            this.special_attack_count = 10;
+            this.special_attack_count = 3;
             this.heal_count = 3;
         },
         attack: function () {
