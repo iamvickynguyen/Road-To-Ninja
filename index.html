@@ -1,0 +1,66 @@
+<!-- author: Vicky Nguyen - 14 oct, 2019 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Road to Ninja</title>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div id="app">
+        <section class="row">
+            <div class="small-6 columns">
+                <h1 class="text-center">NARUTO</h1>
+                <div class="healthbar">
+                    <div class="healthbar text-center"
+                        style="background-color: red; background-image: linear-gradient(to right, red, #FFAE01);margin: 0; color: white;"
+                        :style="{width: narutoHealth + '%'}">
+                        {{ narutoHealth }}
+                    </div>
+                </div>
+            </div>
+            <div class="small-6 columns">
+                <h1 class="text-center">SASUKE</h1>
+                <div class="healthbar">
+                    <div class="healthbar text-center"
+                        style="background-color: red; background-image: linear-gradient(to right, red, #FFAE01); margin: 0; color: white;"
+                        :style="{width: sasukeHealth + '%'}">
+                        {{ sasukeHealth }}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row controls" v-if="!gameIsRunning">
+            <div class="small-12 columns">
+                <button class="start-game" @click="startGame">NEW GAME</button>
+            </div>
+        </section>
+        <section class="row controls" v-else>
+            <div class="small-12 columns">
+                <button :disabled="check_action" id="attack" @click="attack">ATTACK</button>
+                <button :disabled="check_special_attack" id="special-attack" @click="specialAttack">SPECIAL ATTACK
+                    ({{special_attack_count}})</button>
+                <button :disabled="check_heal" id="heal" @click="heal">HEAL ({{heal_count}})</button>
+                <button :disabled="check_action" id="give-up" @click="giveUp">GIVE UP</button>
+            </div>
+        </section>
+        <section class="center_sprites">
+            <div class="row">
+                <div class="small-3 columns">
+                    <img :src="'sprites/' + naruto_img" id="naruto">
+                </div>
+
+                <div class="small-3 columns">
+                    <img :src="'sprites/' + sasuke_img" id="sasuke">
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

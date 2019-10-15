@@ -1,0 +1,138 @@
+body {
+    background-image: url('/sprites/battlefield.jpg');
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1{
+    font-size: 30px;
+    background: -webkit-linear-gradient(rgb(255, 115, 0), rgb(255, 217, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.healthbar {
+    width: 80%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.541);
+    margin: auto;
+    transition: width 500ms;
+    box-shadow: 0px 3px 6px rgba(22, 22, 22, 0.781);
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+}
+
+.controls, .log {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    /* box-shadow: 0px 3px 6px #ccc; */
+}
+
+.turn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.log ul {
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.log ul li {
+    margin: 5px;
+}
+
+.log ul .player-turn {
+    color: blue;
+    background-color: #e4e8ff;
+}
+
+.log ul .monster-turn {
+    color: red;
+    background-color: #ffc0c1;
+}
+
+button {
+    font-size: 20px;
+    background-color: #eee;
+    padding: 12px;
+    box-shadow: 0 1px 1px black;
+    margin: 10px;
+}
+
+.start-game {
+    /* background-color: #aaffb0; */
+    background: #01F7FF ;
+    background-image: -webkit-linear-gradient(top, #01F7FF , #014AFF);  background-image: -moz-linear-gradient(top, #01F7FF , #014AFF);  background-image: -ms-linear-gradient(top, #01F7FF , #014AFF);  background-image: -o-linear-gradient(top, #01F7FF , #014AFF);  background-image: linear-gradient(to bottom, #01F7FF , #014AFF);
+    -webkit-border-radius: 28;  -moz-border-radius: 28;  border-radius: 28px;
+    text-shadow: 3px 2px 1px #9daef5;  -webkit-box-shadow: 6px 5px 24px #666666;  -moz-box-shadow: 6px 5px 24px #666666;  box-shadow: 6px 5px 24px #666666;
+    font-family: Arial;  color: #fafafa;  font-size: 27px;  padding: 19px;  text-decoration: none;
+}
+
+.start-game:hover {
+    /* background-color: #76ff7e; */
+    background: #014AFF;
+    background-image: -webkit-linear-gradient(top, #014AFF, #01F7FF );  background-image: -moz-linear-gradient(top, #014AFF, #01F7FF );  background-image: -ms-linear-gradient(top, #014AFF, #01F7FF );  background-image: -o-linear-gradient(top, #014AFF, #01F7FF );  background-image: linear-gradient(to bottom, #014AFF, #01F7FF );
+    text-decoration: none;
+}
+
+#attack {
+    background-color: #ff7367;
+}
+
+#attack:hover {
+    background-color: #ff3f43;
+}
+
+#attack:disabled{
+    background-color: #6e6e6e;
+}
+
+#special-attack {
+    background-color: #ffaf4f;
+}
+
+#special-attack:hover {
+    background-color: #ff9a2b;
+}
+
+#special-attack:disabled{
+    background-color: #6e6e6e;
+}
+
+#heal {
+    background-color: #aaffb0;
+}
+
+#heal:hover {
+    background-color: #76ff7e;
+}
+
+#heal:disabled{
+    background-color: #6e6e6e;
+}
+
+#give-up {
+    background-color: #ffffff;
+}
+
+#give-up:hover {
+    background-color: #c7c7c7;
+}
+
+#give-up:disabled{
+    background-color: #6e6e6e;
+}
+.center_sprites{
+    padding-top: 100px;
+    width: 73%;
+    margin: auto;
+}
