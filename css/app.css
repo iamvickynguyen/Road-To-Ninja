@@ -1,5 +1,8 @@
 body {
-    background-image: url('/sprites/battlefield.jpg');
+    background: url('/sprites/battlefield.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 
 .text-center {
